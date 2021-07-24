@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PlaceContent : MonoBehaviour {
 
     [SerializeField]
-    GameObject contentPrefab;
+    GameObject m_PlacementPrefab;
     [SerializeField]
     ARRaycastManager raycastManager;
     [SerializeField]
@@ -27,7 +27,7 @@ public class PlaceContent : MonoBehaviour {
 
             if (hitPoints.Count > 0) {
                 Pose pose = hitPoints[0].pose;
-                Instantiate(contentPrefab, pose.position, pose.rotation, transform);
+                Instantiate(m_PlacementPrefab, pose.position, pose.rotation, transform);
             }
         }
     }
