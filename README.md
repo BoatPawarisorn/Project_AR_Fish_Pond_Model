@@ -1,2 +1,1 @@
-# TestGameBoxChangeColor
- Test
+#### ไฟล์ .apk สามารถ Copy ไฟล์ไปรันบน Andriod ได้เลย
